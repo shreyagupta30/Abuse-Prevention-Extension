@@ -8,7 +8,7 @@ as delete words from the block list.
 * Clone and star the repository.
  
  ``` 
- git clone https://github.com/shubhank-saxena/endgame-spoiler-prevention.git
+ git clone https://github.com/shreyagupta30/Abuse-Prevention-Extension.git
  ```
 * Then open chrome and type
  
