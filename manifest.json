@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Abuse Words Prevention",
+  "version": "0.1",
+  "author" : "Shreya Gupta",
+  "offline_enabled": true,
+
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+
+    "permissions": [
+        "storage"
+    ],
+
+  "page_action": {
+    "default_title": "Abuse Words Prevention",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128" : "icon/128.png"
+    }
+  }
+}

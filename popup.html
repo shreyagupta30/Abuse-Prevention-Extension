@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Abuse Prevention Extension</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script type="text/javascript" src="popup.js"></script>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+
+  <body>
+    <div class="heading">
+      <h1>Abuse Words Prevention</h1>
+    </div>
+    <div class="container">
+      <table class="table table-striped" , id="cussTable">
+        <thead>
+          <tr>
+            <th scope="col">Word</th>
+            <th scope="col">Count</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+      <hr />
+      <h3>Add new word</h3>
+      <form>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" id='word' />
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id='button'>
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+      <h3>Delete word</h3>
+      <form>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" id='delete-word' />
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id='delete-button'>
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
